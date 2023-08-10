@@ -81,7 +81,7 @@ function extractNameFromTemplate(value) {
  *   'cat'       => 'c'
  */
 function getFirstChar(value) {
-  return value[1];
+  return value[0];
 }
 
 /**
@@ -293,13 +293,13 @@ function getCardId(value) {
       num = 1;
       break;
     case 'J':
-      num = 2;
+      num = 11;
       break;
     case 'Q':
-      num = 2;
+      num = 12;
       break;
     case 'K':
-      num = 2;
+      num = 13;
       break;
     default:
       num = value.slice(0, -1);
